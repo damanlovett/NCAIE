@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/cases
+END
+basics.test.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/cases/basics.test.php
+END
+dispatcher.test.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/cases/dispatcher.test.php
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/tests/test_app/views/pages
+END
+home.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/tests/test_app/views/pages/home.ctp
+END
+empty
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repo/!svn/ver/7118/trunk/cake/1.2.x.x/cake/tests/test_app/views/pages/empty
+END

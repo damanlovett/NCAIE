@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/tests/test_app/views/posts
+END
+test_nocache_tags.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/tests/test_app/views/posts/test_nocache_tags.ctp
+END
+scaffold.edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repo/!svn/ver/7690/trunk/cake/1.2.x.x/cake/tests/test_app/views/posts/scaffold.edit.ctp
+END
+index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repo/!svn/ver/6311/trunk/cake/1.2.x.x/cake/tests/test_app/views/posts/index.ctp
+END
+cache_empty_sections.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/tests/test_app/views/posts/cache_empty_sections.ctp
+END
+sequencial_nocache.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/tests/test_app/views/posts/sequencial_nocache.ctp
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repo/!svn/ver/7961/trunk/cake/1.2.x.x/cake/LICENSE.txt
+END
+VERSION.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/VERSION.txt
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/bootstrap.php
+END
+basics.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/basics.php
+END
+dispatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/dispatcher.php
+END

@@ -1,0 +1,176 @@
+<?php
+class ProfilesController extends AppController {
+
+	var $name = 'Profiles';
+	var $helpers = array('Html', 'Form', 'Time');
+	var $paginate = array('order'=>array('Profile.name'=>'asc'));
+	var $layout = 'ncaie';
+	var $pageTitle = 'Members Area';
+
+    function beforeFilter(){
+        parent::beforeFilter();
+        $this->__expiredSession();
+        $this->Auth->allow('display');
+    
+    }
+	
+    function index() {
+        $this->Profile->recursive = 0;
+        $this->set('profiles', $this->paginate());
+    }
+        
+	function institution() {
+        $this->Profile->recursive = 0;
+        $this->set('profiles', $this->paginate());
+    }
+    
+    function admin_index() {
+        $this->Profile->recursive = 0;
+        $this->set('profiles', $this->paginate());
+    }
+
+    function view($id = null) {
+        if (!$id) {
+            $this->Session->setFlash(__('Invalid Profile.', true));
+            $this->redirect(array('action'=>'index'));
+        }
+        $this->set('profile', $this->Profile->read(null, $id));
+    }
+	
+    function admin_view($id = null) {
+        if (!$id) {
+            $this->Session->setFlash(__('Invalid Profile.', true));
+            $this->redirect(array('action'=>'index'));
+        }
+        $this->set('profile', $this->Profile->read(null, $id));
+    }
+
+    function personal() {
+    	$data = $this->Profile->findByUserId($this->Auth->user('id'));
+        $this->set('profile', $data);		
+    }
+
+	function add() {
+		if (!empty($this->data)) {
+            $this->Profile->create();
+			$this->data['Profile']['user_id']=$this->Auth->user('id');
+            $this->data['Profile']['email']=$this->Auth->user('username');
+            $this->data['Profile']['name']=$this->Auth->user('name');
+			if ($this->Profile->save($this->data)) {
+				$this->Session->setFlash(__('The Profile has been saved', true));
+				$this->redirect(array('action'=>'personal'));
+			} else {
+				$this->Session->setFlash(__('The Profile could not be saved. Please, try again.', true));
+			}
+		}
+        $areas = $this->Profile->Area->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $positions = $this->Profile->Position->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'position')));
+        $volunteerings = $this->Profile->Volunteering->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'volunteering')));
+        $offices = $this->Profile->Office->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'office')));
+        $sections = $this->Profile->Section->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $this->set(compact('areas','positions','volunteerings','offices', 'sections'));
+	}
+
+	function admin_add() {
+		if (!empty($this->data)) {
+            $this->Profile->create();
+			$this->data['Profile']['user_id']=$this->Auth->user('id');
+            $this->data['Profile']['email']=$this->Auth->user('username');
+            $this->data['Profile']['name']=$this->Auth->user('name');
+			if ($this->Profile->save($this->data)) {
+				$this->Session->setFlash(__('The Profile has been saved', true));
+				$this->redirect(array('action'=>'personal'));
+			} else {
+				$this->Session->setFlash(__('The Profile could not be saved. Please, try again.', true));
+			}
+		}
+        $areas = $this->Profile->Area->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $positions = $this->Profile->Position->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'position')));
+        $volunteerings = $this->Profile->Volunteering->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'volunteering')));
+        $offices = $this->Profile->Office->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'office')));
+        $sections = $this->Profile->Section->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $this->set(compact('areas','positions','volunteerings','offices', 'sections'));
+	}
+
+	function admin_edit($id = null) {
+		if (!$id && empty($this->data)) {
+			$this->Session->setFlash(__('Invalid Profile', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		if (!empty($this->data)) {
+			$this->set('profile',$this->data);
+			$this->data['Profile']['email']=$this->Auth->user('username');
+			$this->data['Profile']['name']=$this->Auth->user('name');
+			if ($this->Profile->save($this->data)) {
+				$this->Session->setFlash(__('Your profile has been saved', true));
+				$this->redirect(array('action'=>'index'));
+			} else {
+				$this->Session->setFlash(__('The Profile could not be saved. Please, try again.', true));
+			}
+		}
+		if (empty($this->data)) {
+			$this->data = $this->Profile->read(null, $id);
+			        $areas = $this->Profile->Area->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $positions = $this->Profile->Position->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'position')));
+        $volunteerings = $this->Profile->Volunteering->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'volunteering')));
+        $offices = $this->Profile->Office->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'office')));
+        $sections = $this->Profile->Section->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $this->set(compact('areas','positions','volunteerings','offices', 'sections'));
+		}
+
+	}
+
+	function edit($id = null) {
+		if (!$id && empty($this->data)) {
+			$this->Session->setFlash(__('Invalid Profile', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		if (!empty($this->data)) {
+			$this->set('profile',$this->data);
+			$this->data['Profile']['email']=$this->Auth->user('username');
+			$this->data['Profile']['name']=$this->Auth->user('name');
+			if ($this->Profile->save($this->data)) {
+				$this->Session->setFlash(__('The profile has been saved', true));
+				$this->redirect(array('action'=>'personal'));
+			} else {
+				$this->Session->setFlash(__('The Profile could not be saved. Please, try again.', true));
+			}
+		}
+		if (empty($this->data)) {
+			$this->data = $this->Profile->read(null, $id);
+			        $areas = $this->Profile->Area->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $positions = $this->Profile->Position->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'position')));
+        $volunteerings = $this->Profile->Volunteering->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'volunteering')));
+        $offices = $this->Profile->Office->find('list', array('order'=>array('position'=>'asc'), 'conditions'=>array('visible'=>1, 'type'=>'office')));
+        $sections = $this->Profile->Section->find('list', array('order'=>array('title'=>'asc'), 'conditions'=>array('visible'=>1)));
+        $this->set(compact('areas','positions','volunteerings','offices', 'sections'));
+		}
+
+	}
+	
+    function delete($id = null) {
+        if (!$id) {
+            $this->Session->setFlash(__('Invalid id for Profile', true));
+            $this->redirect(array('action'=>'index'));
+        }
+        if ($this->Profile->del($id)) {
+            $this->Session->setFlash(__('Profile deleted', true));
+            $this->redirect(array('action'=>'index'));
+        }
+    }
+
+    function admin_delete($id = null) {
+        if (!$id) {
+            $this->Session->setFlash(__('Invalid id for Profile', true));
+            $this->redirect(array('action'=>'index'));
+        }
+        if ($this->Profile->del($id)) {
+            $this->Session->setFlash(__('Profile deleted', true));
+            $this->redirect(array('action'=>'index'));
+        }
+    }
+	
+
+
+}
+?>

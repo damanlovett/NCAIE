@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/plugins/test_plugin/views/helpers
+END
+other_helper.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/plugins/test_plugin/views/helpers/other_helper.php
+END
+plugged_helper.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/plugins/test_plugin/views/helpers/plugged_helper.php
+END

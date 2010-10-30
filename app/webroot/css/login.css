@@ -1,0 +1,65 @@
+/***********************************************************************
+ Login Page
+************************************************************************/
+#loginBox{
+	overflow:hidden;
+	width:800px;
+	height:300px;
+	margin:30px auto 0 auto;
+	border:solid 1px #ccc;
+}
+#header {
+	background-color:#f4f4f4;
+	width:800px;
+	height:76px;
+	background-image: url('../img/loginHd.jpg');
+	background-repeat:no-repeat;
+
+}
+#loginForm {
+	background-image: url('../img/loginBd.jpg');
+	padding:10px 25px 10px 10px;
+	height:150px;
+	text-align:right;
+}
+#loginInfo {
+	float:left;
+	width:300px;
+	min-height:100px;
+	margin-right:150px;
+	text-align:left;
+}
+.tinyBox {
+	margin-left:10px;
+	width:200px;
+}
+.input {
+	margin-bottom:10px;
+}
+#login input:focus {
+    border-color: #333;
+}
+.submit {
+    margin: 0 auto 0 125px;
+    
+}
+#footer {
+	font-size:12px;
+	background-image: url('../img/loginFt.jpg');
+	padding:25px 3px 3px 200px;
+	text-align:center;
+	width:800px;
+	height:50px;
+	background-color:#D65B20;
+	color:#999;
+}
+div.message {
+	text-align:center;
+	width:350px;
+	margin:0 auto 10 auto;
+	font-weight:bold;
+	border: 1px solid #CCC;
+	padding:3px;
+	background-color:#fff;
+	color:#cc0000;
+}

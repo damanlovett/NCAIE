@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/console
+END
+error.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/!svn/ver/8004/trunk/cake/1.2.x.x/cake/console/error.php
+END
+cake
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/console/cake
+END
+cake.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/console/cake.bat
+END
+cake.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/console/cake.php
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/config
+END
+paths.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repo/!svn/ver/7945/trunk/cake/1.2.x.x/cake/config/paths.php
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/config/config.php
+END

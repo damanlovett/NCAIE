@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repo/!svn/ver/7690/trunk/cake/1.2.x.x/cake/tests/test_app/plugins/test_plugin/views/tests
+END
+scaffold.edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repo/!svn/ver/7690/trunk/cake/1.2.x.x/cake/tests/test_app/plugins/test_plugin/views/tests/scaffold.edit.ctp
+END
+index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repo/!svn/ver/7690/trunk/cake/1.2.x.x/cake/tests/test_app/plugins/test_plugin/views/tests/index.ctp
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups
+END
+acl.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/acl.group.php
+END
+xml.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/xml.group.php
+END
+no_database.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/no_database.group.php
+END
+model.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/model.group.php
+END
+helpers.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/helpers.group.php
+END
+console.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/console.group.php
+END
+cache.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/cache.group.php
+END
+lib.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/lib.group.php
+END
+lib_controller.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/lib_controller.group.php
+END
+view.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/view.group.php
+END
+configure.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/configure.group.php
+END
+components.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/components.group.php
+END
+test_suite.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/test_suite.group.php
+END
+socket.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/socket.group.php
+END
+routing_system.group.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/groups/routing_system.group.php
+END

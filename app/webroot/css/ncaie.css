@@ -1,0 +1,153 @@
+@charset "UTF-8";
+body {
+	margin: 0; 
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	line-height:1.3em;
+	padding: 0;
+	background-color: #1B619B;
+}
+#container {
+    border: solid 2px #999;
+	width: 800px;
+	background: #FFFFFF;
+	text-align: left;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	clear:both;
+}
+
+#navbar {
+	clear:both;
+	background-color: #D1D7E7;
+}
+
+#navbar a:hover{
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	color: #D75A20;
+	text-decoration: none;
+}
+
+#navbar a{
+	display: inline-block;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	padding-left: .25em;
+	padding-right: .25em;
+	text-decoration: none;
+	color: #000000;
+}
+
+#header {
+	background: #FFFFFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+	padding: 0px;
+	margin: 0px;
+	height: 100px;
+} 
+#header h1 {
+	margin: 0;
+}
+
+#mainContent {
+    font-size: .7em;
+	background: #FFFFFF;
+	clear: both;
+	padding-top: .75em;
+	padding-right: 1em;
+	padding-bottom: .75em;
+	padding-left: 1em;
+	border-top:  1px #000 solid;
+}
+#mainContent h1{
+	font-size: .9em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+#mainContent p{
+	margin-left: 2em;
+}
+
+#mainContent legend{
+	font-weight: bold;
+}
+#mainContent td{
+	margin-left: 2em;
+	vertical-align: top;
+}
+#mainContent li{
+	display:list-item;
+}
+table.schedule {
+	width: 750px;
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: gray gray gray gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.schedule th {
+	border-width: 1px 1px 1px 1px;
+	padding: 4px 4px 4px 4px;
+	border-style: inset inset inset inset;
+	border-color: gray gray gray gray;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.schedule td {
+	border-width: 1px 1px 1px 1px;
+	padding: 4px 4px 4px 4px;
+	border-style: inset inset inset inset;
+	border-color: gray gray gray gray;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.schedule td.shaded {
+	background-color:gray;
+}
+#announcements{
+	margin:0px;
+	padding:0px;
+}
+#footer {
+	float: none;
+	margin:0px;
+	height:10px;
+	background-color: #D1D7E7;
+	border-top:solid 1px #ccc;
+} 
+#footer p {
+    text-align:right;
+	margin:  0 0 5px 0;
+	padding: 0 0 5px 0;
+	font-size:.7em;
+	clear:both;
+}
+/* Global CSS */
+div.paging a {
+    text-decoration:none;
+}
+#userLogin {
+	font-size:.65em;
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 10px;
+}
+#userLogin h2 {
+	padding:0px;
+    margin:0px;
+}
+.noborder {
+	border:none;
+}
+

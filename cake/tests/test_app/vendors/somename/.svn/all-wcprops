@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/vendors/somename
+END
+some.name.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/vendors/somename/some.name.php
+END

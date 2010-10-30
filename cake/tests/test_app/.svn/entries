@@ -1,0 +1,52 @@
+10
+
+dir
+8146
+https://svn.cakephp.org/repo/trunk/cake/1.2.x.x/cake/tests/test_app
+https://svn.cakephp.org/repo
+
+
+
+2009-03-19T20:25:10.097919Z
+8120
+gwoo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3807eeeb-6ff5-0310-8944-8be069107fe0
+
+locale
+dir
+
+tmp
+dir
+
+vendors
+dir
+
+plugins
+dir
+
+models
+dir
+
+config
+dir
+
+controllers
+dir
+
+views
+dir
+

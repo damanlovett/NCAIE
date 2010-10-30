@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/models/behaviors
+END
+persister_one_behavior.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/models/behaviors/persister_one_behavior.php
+END
+empty
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/!svn/ver/7118/trunk/cake/1.2.x.x/cake/tests/test_app/models/behaviors/empty
+END
+persister_two_behavior.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repo/!svn/ver/8120/trunk/cake/1.2.x.x/cake/tests/test_app/models/behaviors/persister_two_behavior.php
+END
