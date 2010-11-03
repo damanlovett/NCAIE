@@ -150,4 +150,4 @@ div.paging a {
 .noborder {
 	border:none;
 }
-
+.hideDiv { display:none; }
