@@ -1,6 +1,6 @@
 <div class="announcements index">
-<h2><?php __('Announcements');?></h2>
-<p>
+<h2><?php __('NCAIE Announcements');?></h2>
+<p class="hideDiv">
 <?php
 echo $paginator->counter(array(
 'format' => __('Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%', true)
@@ -28,12 +28,16 @@ foreach ($announcements as $announcement):?>
 </div>
 <div class="paging">
 	<?php echo $paginator->prev('<< '.__('previous', true), array(), null, array('class'=>'disabled'));?>
- | 	<?php echo $paginator->numbers();?>
-	<?php echo $paginator->next(__('next', true).' >>', array(), null, array('class'=>'disabled'));?>
+ | 	<?php  echo $paginator->numbers();?>
+	<?php  echo $paginator->next(__('next', true).' >>', array(), null, array('class'=>'disabled'));?>
 </div>
 <div class="actions">
-	<ul>
-		<li><?php echo $html->link(__($html->image('email.png').'Expertise',true),array('controller'=>'expertises', 'action'=>'post'), array('escape' => false));?></li>
-		<li><?php echo $html->link(__($html->image('email.png').'NCAIE',true),array('controller'=>'ncaies', 'action'=>'post'), array('escape' => false));?></li>
-	</ul>
+<br />
+<ul>	
+   <li><?php echo $html->link(__('Expertise',true),array('controller'=>'expertises', 'action'=>'post'), array('escape' => false));?> &nbsp; Send a message to a specific area of Expertise</li> <br />
+   <li> &nbsp; </li>
+   <li><?php echo $html->link(__('NCAIE',true),array('controller'=>'ncaies', 'action'=>'post'), array('class'=>'add', 'escape' => false));?> &nbsp; Send a message to a specific NCAIE Group</li><br />
+</ul>
+<br />
+<br />
 </div>
