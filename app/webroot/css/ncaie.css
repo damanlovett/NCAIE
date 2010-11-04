@@ -151,3 +151,33 @@ div.paging a {
 	border:none;
 }
 .hideDiv { display:none; }
+div.actions { height:100px; }
+.pageButtons { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-bottom:10px; height:auto; }
+div.pageButtons ul {
+	margin: 0px 0;
+	padding: 0;
+}
+div.pageButtons li {
+	display: inline;
+	list-style-type: none;
+	line-height: 1em;
+	margin: 0 1em 0 0;
+	white-space: nowrap;
+}
+div.pageButtons ul li a {
+	background:#fff;
+	color: #003d4c;
+	text-decoration: none;
+}
+div.pageButtons ul li a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+td.actions {
+	text-align: left;
+	white-space: nowrap;
+}
+td.actions a {
+	margin: 0px 6px;
+}
+

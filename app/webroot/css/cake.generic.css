@@ -244,7 +244,7 @@ div.paging span.current {
 div.paging span a {
 }
 
-/* Scaffold View */
+/* Scaffold View 
 dl {
 	line-height: 2em;
 	margin: 0em 0em;
@@ -262,7 +262,7 @@ dd {
 	margin-left: 10em;
 	margin-top: -2em;
 	vertical-align: top;
-}
+} */
 
 /* Forms */
 form {

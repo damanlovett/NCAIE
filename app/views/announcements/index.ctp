@@ -31,13 +31,8 @@ foreach ($announcements as $announcement):?>
  | 	<?php  echo $paginator->numbers();?>
 	<?php  echo $paginator->next(__('next', true).' >>', array(), null, array('class'=>'disabled'));?>
 </div>
-<div class="actions">
-<br />
-<ul>	
-   <li><?php echo $html->link(__('Expertise',true),array('controller'=>'expertises', 'action'=>'post'), array('escape' => false));?> &nbsp; Send a message to a specific area of Expertise</li> <br />
-   <li> &nbsp; </li>
-   <li><?php echo $html->link(__('NCAIE',true),array('controller'=>'ncaies', 'action'=>'post'), array('class'=>'add', 'escape' => false));?> &nbsp; Send a message to a specific NCAIE Group</li><br />
-</ul>
-<br />
-<br />
-</div>
+<table>	
+   <tr><td class="actions"><?php echo $html->link(__('Expertise',true),array('controller'=>'expertises', 'action'=>'post'), array('escape' => false));?> &nbsp; Send a message to a specific area of Expertise</td> </tr>
+  <!-- <li> &nbsp; </li> -->
+   <td class="actions"><?php echo $html->link(__('NCAIE',true),array('controller'=>'ncaies', 'action'=>'post'), array('class'=>'add', 'escape' => false));?> &nbsp; Send a message to a specific NCAIE Group</td></tr>
+</table>

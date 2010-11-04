@@ -27,7 +27,7 @@ by going to the <?php echo $html->link(__('Complete Profile', true), array('acti
 			<?php echo $profile['Profile']['phone']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Service'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Years of Service in International Education'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Profile']['service']; ?>
 			&nbsp;
@@ -37,7 +37,7 @@ by going to the <?php echo $html->link(__('Complete Profile', true), array('acti
 			<?php echo $profile['Position']['name']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Size Of Office'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('How many people work in your office?'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Profile']['size_of_office']; ?>
 			&nbsp;
@@ -47,7 +47,7 @@ by going to the <?php echo $html->link(__('Complete Profile', true), array('acti
 			<?php echo $profile['Office']['name']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Volunteering'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Would you be interested in volunteering at an NCAIE event or workshop?'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Volunteering']['name']; ?>
 			&nbsp;
@@ -78,7 +78,7 @@ by going to the <?php echo $html->link(__('Complete Profile', true), array('acti
 	<?php if (!empty($profile['Area'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php __('Areas of Expertise'); ?></th>
+		<th><?php __('Areas of Expertise [holding the Ctrl key to select multiple options]'); ?></th>
 	</tr>
 	<?php
 		$i = 0;
@@ -100,7 +100,7 @@ by going to the <?php echo $html->link(__('Complete Profile', true), array('acti
 	<?php if (!empty($profile['Section'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php __('Sections of NCAIE'); ?></th>
+		<th><?php __('Sections of NCAIE [holding the Ctrl key to select multiple options]'); ?></th>
 	</tr>
 	<?php
 		$i = 0;

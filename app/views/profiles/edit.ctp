@@ -8,7 +8,7 @@
 		echo $form->input('institution');
 		echo $form->input('title');
         echo $form->input('phone', array('default'=>'(xxx) xxx-xxxx', 'style'=>'width: 175px'));
-        echo $form->input('service', array( 'label' => 'Years of Service in the Field'
+        echo $form->input('service', array( 'label' => 'Years of Service in International Education'
 			  , 'options' => array(
 				  '1'=>'1',
 				  '2'=>'2',
@@ -27,7 +27,7 @@
 				  '15+'=>'15+'
 			  )));
 		echo $form->input('position_id');
-        echo $form->input('size_of_office', array(
+        echo $form->input('How many people work in your office?', array(
                                       'options'=>array(
                                             '1-2'=>'1-2',
                                             '3-7'=>'3-7',
@@ -35,9 +35,9 @@
                                             '12+'=>'12+'
                                       )));
 		echo $form->input('office_id');
-		echo $form->input('volunteering_id');
-		echo $form->input('Area');
-		echo $form->input('Section');
+		echo $form->input('volunteering_id', array('label'=>'Would you be interested in volunteering at an NCAIE event or workshop?'));
+		echo $form->input('Area', array('label'=>'Area [holding the Ctrl key to select multiple options]'));
+		echo $form->input('Section', array('label'=>'Section [holding the Ctrl key to select multiple options]'));
         echo $form->input('permission', 
                                   array('label'=>'Permission to give out your contact information to someone who requests it',
                                       'options'=>array(

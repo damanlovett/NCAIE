@@ -127,11 +127,10 @@ table tr td {
 table tr.altrow td {
 	background: #f4f4f4;
 }
-td.actions {
-	text-align: center;
+td.actions, div.actions {
 	white-space: nowrap;
 }
-td.actions a {
+td.actions a, div.actions {
 	margin: 0px 6px;
 }
 .cake-sql-log table {
@@ -211,7 +210,7 @@ div.paging a {
 	text-decoration:none;
 }
 
-/* Scaffold View */
+/* Scaffold View 
 dl {
 	line-height: 2em;
 	margin: 0em 0em;
@@ -234,7 +233,7 @@ dd {
 	margin-left: 11em;
 	margin-top: -2em;
 	vertical-align: top;
-}
+}*/
 
 /* Forms */
 form {
@@ -379,7 +378,7 @@ p.error em {
 }
 
 /*  Actions  */
-div.actions ul {
+/*div.actions ul {
 	margin: 0px 0;
 	padding: 0;
 }
@@ -396,7 +395,7 @@ div.actions ul li a {
 }
 div.actions ul li a:hover {
 	text-decoration: underline;
-}
+}*/
 div.view {
 	border-bottom:solid 1px #ccc;
 }
@@ -531,7 +530,6 @@ div.actions {
 }
 div.actions ul {
     margin: 0 0 15px 10px;
-    text-align: center;
     list-style: none;
     padding: 0;
 
@@ -543,45 +541,6 @@ div.actions li {
 	/* margin: 0 0.15em 20px 0; */
 	/* border: 0.1em solid #dcdce9; */
 
-}
-div.actions ul li a {
-	height: 2em;
-	line-height: 2em;
-	background:none;
-	float: left;
-	width: 9em;
-	margin: 0 0 0 0;
-	border-top: 0.1em solid #fff;
-	border-right: 0.1em solid #fff;
-	border-bottom: 0.1em solid #eeeeee;
-	border-left: 0.1em solid #eeeeee;
-	display: block;
-	color: #0d2474;
-	text-decoration: none;
-	text-align: center;
-}
-div.actions ul li a.long {
-    height: 2em;
-    line-height: 2em;
-    float: left;
-    width: 11em;
-    margin: 0 0 0 0;
-    border-top: 0.1em solid #fff;
-    border-right: 0.1em solid #fff;
-    border-bottom: 0.1em solid #eeeeee;
-    border-left: 0.1em solid #eeeeee;
-    display: block;
-    color: #0d2474;
-    text-decoration: none;
-    text-align: center;
-}
-div.actions ul li a:hover {
-	text-decoration:none;
-    color:#666666;
-    border-top: 0.1em solid #eeeeee;
-    border-right: 0.1em solid #eeeeee;
-    border-bottom: 0.1em solid #fff;
-    border-left: 0.1em solid #fff;
 }
 
 #information{
@@ -650,14 +609,14 @@ input[type=submit]:hover {
 }
 /* Alternative Action buttons */
 
-div.actions {
+/*div.actions, td.actions {
 	border-top: 1px solid #ccc;
 }
-div.actions {
+div.actions, td.actions {
 	height:50px;
 	margin-top: 15px;
 }
-div.actions ul li a {
+div.actions ul li a, td.actions ul li a {
 		padding: 1px 2px;
 		display: inline;
 		background: #f3f3f3 url(../img/button.png) repeat-x bottom;
@@ -670,8 +629,8 @@ div.actions ul li a {
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 		text-shadow: none;
-}
-td.actions a {
+}*/
+td.actions a, div.actions a {
 		padding: 4px 8px;
 		display: inline;
 		background: #f3f3f3 url(../img/button.png) repeat-x bottom;
@@ -687,9 +646,29 @@ td.actions a {
 		text-decoration:none;
 		font-size:90%;
 }
-td.actions a:hover {
+td.actions a:hover, div.actions a:hover {
 		background-position: 0 center;
 		color:#666666;
 		text-shadow:none;
 }
 .hideDiv { display:none }
+dl {
+	margin: 0em 0em;
+	width: 100%;
+}
+dl.altrow {
+	background: #f4f4f4;
+}
+dt {
+   font-size: 1em;
+	font-weight: bold;
+	vertical-align: top;
+	color:#1B619B;
+
+}
+dd {
+	margin-top: -.5em;
+   margin-bottom: 2em;
+	vertical-align: top;
+}
+
