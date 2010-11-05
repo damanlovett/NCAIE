@@ -1,7 +1,7 @@
 <div class="ncaie form">
 <?php echo $form->create('Ncaie');?>
 	<fieldset>
- 		<legend><?php __('Add Ncaie');?></legend>
+ 		<legend><?php __('Add NAFSA/NCAIE Section');?></legend>
 	<?php
 		echo $form->input('area_id');
 		echo $form->input('user_id');

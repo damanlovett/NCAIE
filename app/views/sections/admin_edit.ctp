@@ -1,7 +1,7 @@
 <div class="sections form">
 <?php echo $form->create('Section');?>
 	<fieldset>
- 		<legend><?php __('Edit Section');?></legend>
+ 		<legend><?php __('Edit NAFSA/NCAIE Section');?></legend>
     <?php
         echo $form->input('title');
         echo $form->input('visible', array(

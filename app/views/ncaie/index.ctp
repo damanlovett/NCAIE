@@ -1,5 +1,5 @@
 <div class="ncaie index">
-<h2><?php __('Ncaie');?></h2>
+<h2><?php __('NAFSA/NCAIE Section');?></h2>
 <p>
 <?php
 echo $paginator->counter(array(
