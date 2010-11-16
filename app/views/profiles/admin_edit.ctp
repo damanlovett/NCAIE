@@ -9,30 +9,33 @@
 		echo $form->input('institution');
 		echo $form->input('title');
 		echo $form->input('phone');
-		echo $form->input('service', array('options'=>array(
-													'1'=>'1',
-													'2'=>'2',
-													'3'=>'3',
-													'4'=>'4',
-													'5'=>'5',
-													'6'=>'6',
-													'7'=>'7',
-													'8'=>'8',
-													'9'=>'9',
-													'10'=>'10',
-													'11'=>'11',
-													'12'=>'12',
-													'13'=>'13',
-													'14'=>'14',
-													'15'=>'15',
-													'15+'=>'15+'
-												)));
+        echo $form->input('service', array( 'label' => 'Years of Service in International Education'
+			  , 'options' => array(
+				  '1'=>'1',
+				  '2'=>'2',
+				  '3'=>'1',
+				  '4'=>'1',
+				  '5'=>'6',
+				  '7'=>'7',
+				  '8'=>'8',
+				  '9'=>'9',
+				  '10'=>'10',
+				  '11'=>'11',
+				  '12'=>'12',
+				  '13'=>'13',
+				  '14'=>'14',
+				  '15'=>'15',
+				  '15+'=>'15+'
+			  )));
 		echo $form->input('position_id');
 		echo $form->input('size_of_office');
-		echo $form->input('office_id');
+		
+		// Delete when confirmed with client
+		// echo $form->input('office_id');
+		
 		echo $form->input('volunteering_id');
 		echo $form->input('permission');
-		echo $form->input('Area');
+		echo $form->input('Area', array('label'=>'Area of Experience <br /> (Select all areas that in which you have had past or current experience)<br /> [holding the Ctrl key to select multiple options]'));
 		echo $form->input('Section');
 	?>
 	</fieldset>

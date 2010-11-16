@@ -1,5 +1,5 @@
 <div class="areas index">
-<h2><?php __('Areas of Expertise');?></h2>
+<h2><?php __('Areas of Experience');?></h2>
 <p>
 <?php
 echo $paginator->counter(array(

@@ -31,11 +31,20 @@
 			<?php echo $profile['Profile']['size_of_office']; ?>
 			&nbsp;
 		</dd>
+		
+		<div class="hideDiv">
+			
+			<!-- Delete when confirmed with Client -->
+			
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Office'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $html->link($profile['Office']['name'], array('controller'=> 'offices', 'action'=>'view', $profile['Office']['id'])); ?>
 			&nbsp;
 		</dd>
+		
+		</div>
+		
+		
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Volunteering'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Volunteering']['name']; ?>

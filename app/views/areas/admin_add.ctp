@@ -1,7 +1,7 @@
 <div class="areas form">
 <?php echo $form->create('Area');?>
 	<fieldset>
- 		<legend><?php __('Add Area of Expertise');?></legend>
+ 		<legend><?php __('Add Area of Experience');?></legend>
 	<?php
 		echo $form->input('title');
 		echo $form->input('visible', array(

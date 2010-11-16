@@ -19,7 +19,7 @@
             <?php echo $html->link(__('Section', true), array('controller'=>'sections', 'action'=>'index'))." | "; ?>
         </li>
         <li>
-            <?php echo $html->link(__('Expertises', true), array('controller'=>'expertises', 'action'=>'index'))." | "; ?>
+            <?php echo $html->link(__('Experience', true), array('controller'=>'expertises', 'action'=>'index'))." | "; ?>
         </li>
         <li>
             <?php echo $html->link(__('NCAIE', true), array('controller'=>'ncaies', 'action'=>'index'))." | "; ?>

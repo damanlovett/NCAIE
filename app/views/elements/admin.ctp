@@ -7,7 +7,7 @@
 		<li><?php //echo $html->link('Expertises', 'admin/expertises/index')." | "; ?></li>
         <li><?php //echo $html->link('NCAIE', 'admin/ncaies/index')." | "; ?></li>
 		-->
-		<li><?php echo "[ ".$html->link('Expertise', '/admin/areas')." ] "; ?></li>
+		<li><?php echo "[ ".$html->link('Experience', '/admin/areas')." ] "; ?></li>
 		<li><?php echo "[ ".$html->link('NCAIE', '/admin/sections')." ] "; ?></li>
 <!-- <li><?php //echo "[ ".$html->link('Email System', '/admin/users/post')." ] "; ?></li> -->
 		<li><?php echo "[ ".$html->link('Access', '/admin/users/access')." ] "; ?></li>

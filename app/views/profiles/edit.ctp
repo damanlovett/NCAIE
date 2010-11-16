@@ -34,9 +34,14 @@
                                             '8-12'=>'8-12',
                                             '12+'=>'12+'
                                       )));
-		echo $form->input('office_id');
+                                      
+        // Delete when confirmed by Client
+                                     
+		// echo $form->input('office_id');
+		
+		
 		echo $form->input('volunteering_id', array('label'=>'Would you be interested in volunteering at an NCAIE event or workshop?'));
-		echo $form->input('Area', array('label'=>'Area [holding the Ctrl key to select multiple options]'));
+		echo $form->input('Area', array('label'=>'Area of Experience <br /> (Select all areas that in which you have had past or current experience)<br /> [holding the Ctrl key to select multiple options]'));
 		echo $form->input('Section', array('label'=>'Section [holding the Ctrl key to select multiple options]'));
         echo $form->input('permission', 
                                   array('label'=>'Permission to give out your contact information to someone who requests it',

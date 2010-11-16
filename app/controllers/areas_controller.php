@@ -3,7 +3,7 @@ class AreasController extends AppController {
 
 	var $name = 'Areas';
 	var $helpers = array('Html', 'Form');
-	var $pageTitle = 'Area of Expertise';
+	var $pageTitle = 'Area of Experience';
 	var $paginate = array('order'=>array('Area.title'=>'asc'));
 
     function beforeFilter(){

@@ -42,11 +42,22 @@ by going to the <?php echo $html->link(__('Complete Profile', true), array('acti
 			<?php echo $profile['Profile']['size_of_office']; ?>
 			&nbsp;
 		</dd>
+		
+		
+		<div class="hideDiv">
+			
+			<!-- Delete section after confirming with client -->
+			
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Office'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Office']['name']; ?>
 			&nbsp;
 		</dd>
+		
+		</div>
+		
+		
+		
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Would you be interested in volunteering at an NCAIE event or workshop?'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Volunteering']['name']; ?>
