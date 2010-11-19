@@ -7,6 +7,7 @@ class AreasUsersController extends AppController {
 	function index() {
 		$this->AreasUsers->recursive = 0;
 		$this->set('areasUsers', $this->paginate());
+		
 	}
 
 	function view($id = null) {

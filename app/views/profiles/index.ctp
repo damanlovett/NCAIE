@@ -1,12 +1,14 @@
+<?php echo $javascript->link(array('tiny_mce/tiny_mce', 'tiny_mce/tiny_basic', FALSE));?>
 <div class="profiles index">
+
 <h2><?php __('NCAIE Members');?></h2>
 <div class="pageButtons">
 <br />
-<table>	
-   <tr><td class="actions"><?php echo $html->link(__('Expertise',true),array('controller'=>'expertises', 'action'=>'post'), array('escape' => false));?> &nbsp; Send a message to a specific area of Expertise</td> </tr>
-  <!-- <li> &nbsp; </li> -->
-   <td class="actions"><?php echo $html->link(__('NCAIE',true),array('controller'=>'ncaies', 'action'=>'post'), array('class'=>'add', 'escape' => false));?> &nbsp; Send a message to a specific NCAIE Group</td></tr>
-</table>
+
+<?php echo $this->element('members_lists'); ?><br />
+<?php echo $this->element('members_buttons'); ?>
+
+
 <br />
 <br />
 </div>

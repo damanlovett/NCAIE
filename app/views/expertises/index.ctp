@@ -1,14 +1,11 @@
 <div class="expertises index">
-<h2><?php __('Areas of Expertise');?></h2>
-<p>
-<?php
-echo $paginator->counter(array(
-'format' => __('Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%', true)
-));
-?></p>
+<h2><?php __('Areas of Experience');?></h2>
+<?php echo $this->element('members_lists'); ?><br />
+<?php echo $this->element('members_buttons'); ?>
+
 <table cellpadding="0" cellspacing="0">
 <tr>
-	<th><?php echo $paginator->sort('Area of Expertise', 'area_id');?></th>
+	<th><?php echo $paginator->sort('Area of Experience', 'area_id');?></th>
 	<th><?php echo $paginator->sort('Member', 'profile_id');?></th>
 </tr>
 <?php

@@ -8,7 +8,9 @@ class ExpertisesController extends AppController {
 
     function index() {
         $this->Expertise->recursive = 0;
-        $this->set('expertises', $this->paginate());
+         $this->set('expertises', $this->paginate());
+        $this->set(compact('expertises'));
+        
     }
    function search($id = null) {
         $this->Expertise->recursive = 0;

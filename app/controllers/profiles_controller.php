@@ -18,6 +18,17 @@ class ProfilesController extends AppController {
         $this->Profile->recursive = 0;
         $this->set('profiles', $this->paginate());
     }
+    
+    function experience() {
+        $this->Profile->recursive = 0;
+        $this->set('profiles', $this->paginate());
+    }
+
+    function ncaie() {
+        $this->Profile->recursive = 0;
+        $this->set('profiles', $this->paginate());
+    }
+
         
 	function institution() {
         $this->Profile->recursive = 0;

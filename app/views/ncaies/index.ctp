@@ -1,11 +1,8 @@
 <div class="ncaies index">
 <h2><?php __('Sections of NCAIE');?></h2>
-<p>
-<?php
-echo $paginator->counter(array(
-'format' => __('Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%', true)
-));
-?></p>
+<?php echo $this->element('members_lists'); ?><br />
+<?php echo $this->element('members_buttons'); ?>
+
 <table cellpadding="0" cellspacing="0">
 <tr>
 	<th><?php echo $paginator->sort('section_id');?></th>
