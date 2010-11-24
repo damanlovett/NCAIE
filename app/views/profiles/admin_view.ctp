@@ -16,9 +16,9 @@
 			<?php echo $profile['Profile']['phone']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Service'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Years of Service in International Education'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $profile['Profile']['service']." year(s)"; ?>
+			<?php echo $profile['Profile']['service']; ?>
 			&nbsp;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Position'); ?></dt>

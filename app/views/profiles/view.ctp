@@ -21,7 +21,7 @@
             <?php echo $profile['Profile']['phone']; ?>
             &nbsp;
         </dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('In the field since'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Years of Service in International Education'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $time->format('Y ', $profile['Profile']['service']); ?>
 			&nbsp;
