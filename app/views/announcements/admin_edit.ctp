@@ -6,7 +6,7 @@
 		echo $form->input('id');
 		echo $form->input('title');
 		echo $form->input('message');
-		echo $form->hidden('user_id');
+		echo $form->hidden('user_id', array('value'=>$session->read('Auth.User.id')));
 	?>
 	</fieldset>
 <?php echo $form->end('Submit');?>
