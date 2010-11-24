@@ -36,11 +36,15 @@
 			<?php echo $profile['Profile']['size_of_office']; ?>
 			&nbsp;
 		</dd>
+	<!-- Section to be deleted when confirmed by client
+		
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Office'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Office']['name']; ?>
 			&nbsp;
 		</dd>
+		
+	-->
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Volunteering'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $profile['Volunteering']['name']; ?>
