@@ -35,7 +35,7 @@ foreach ($profiles as $profile):
 ?>
 	<tr<?php echo $class;?>>
 		<td>
-			<span class="ss_sprite ss_user"><?php echo $html->link($profile['User']['name'], array('controller'=> 'profiles', 'action'=>'view', $profile['Profile']['id'])); ?></span>
+			<span class="ss_sprite ss_user nowrap"><?php echo $html->link($profile['User']['name'], array('controller'=> 'profiles', 'action'=>'view', $profile['Profile']['id'])); ?></span>
 		</td>
 		<td> 
 			<?php echo $profile['Profile']['institution']; ?>&nbsp;
