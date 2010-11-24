@@ -1,7 +1,7 @@
 <?php echo $javascript->link(array('tiny_mce/tiny_mce', 'tiny_mce/tiny_basic', FALSE));?>
 <div class="profiles index">
 
-<h2><?php __('NCAIE Members');?></h2>
+<h2><?php __('All Members');?></h2>
 <div class="pageButtons">
 <br />
 
