@@ -57,7 +57,7 @@
 &nbsp;</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Service');?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-	<?php echo $time->format('m/d/Y', $user['Profile']['service']);?>
+	<?php echo $user['Profile']['service'];?>
 &nbsp;</dd>
 		</dl>
 	<?php endif; ?>
