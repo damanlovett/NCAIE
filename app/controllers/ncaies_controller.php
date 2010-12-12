@@ -102,7 +102,7 @@ class NcaiesController extends AppController {
                                         
         }
 		if(empty($area)){
-            $this->Session->setFlash(__('No members found, no e-mail was sent.', true));
+            $this->Session->setFlash(__('You email request has been processed.', true));
         }else{
             $this->Session->setFlash(__('Email has been sent.', true));}
                         $this->redirect(array('action'=>'index'));
