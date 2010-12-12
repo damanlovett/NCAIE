@@ -1,4 +1,4 @@
-<?php echo $javascript->link(array('tiny_mce/tiny_mce', 'tiny_mce/tiny_basic', FALSE));?>
+<?php echo $javascript->link(array('tiny_mce/tiny_mce', 'tiny_mce/tiny_simple', FALSE));?>
 <?php echo $form->create('Expertise', array('action'=>'post'));?>
 <h2>Area of Experience E-mail</h2>
     <fieldset>

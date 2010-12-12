@@ -1,4 +1,4 @@
-<?php echo $javascript->link(array('tiny_mce/tiny_mce', 'tiny_mce/tiny_basic', FALSE));?>
+<?php echo $javascript->link(array('tiny_mce/tiny_mce', 'tiny_mce/tiny_simple', FALSE));?>
 <h2>NAFSA/NCAIE Section</h2>
     <fieldset>
 <?php echo $form->create('Ncaie', array('action'=>'post'));?>
