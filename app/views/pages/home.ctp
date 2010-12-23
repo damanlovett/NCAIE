@@ -9,8 +9,7 @@
 			?>
 		<div id="loginInfo">
 			<p>Welcome to the members section of the NCAIE.
-				<ul>
-					<li><?php echo $html->link('create an account','/users/add')?></li>
+				<ul><?php echo $html->link('create an account','/users/add')?></li>
 					
 					<!-- Replace when reset password is implemented 
 						
