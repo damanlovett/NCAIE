@@ -27,7 +27,8 @@
 				  '14+'=>'14+'
 			  )));
 		echo $form->input('position_id');
-        echo $form->input('How many people work in your office?', array(
+        echo $form->input('size_of_office', array(
+				'label' => 'How many people work in your office',
                                       'options'=>array(
                                             '1-2'=>'1-2',
                                             '3-7'=>'3-7',
